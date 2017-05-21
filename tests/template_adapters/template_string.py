@@ -7,7 +7,7 @@ test_template_string
 Tests for `docdown.template_adapters.template_string` module.
 """
 
-from __future__ import absolute_import, unicode_literals, print_function
+
 
 import unittest
 

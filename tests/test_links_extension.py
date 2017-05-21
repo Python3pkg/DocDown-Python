@@ -7,7 +7,7 @@ test_links_extension
 Tests for `docdown.links` module.
 """
 
-from __future__ import absolute_import, unicode_literals, print_function
+
 
 import markdown
 import unittest

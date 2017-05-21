@@ -7,7 +7,7 @@ test_string_format
 Tests for `docdown.template_adapters.string_format` module.
 """
 
-from __future__ import absolute_import, unicode_literals, print_function
+
 
 import unittest
 

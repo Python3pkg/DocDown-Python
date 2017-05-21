@@ -7,7 +7,7 @@ note_blocks
 docdown.note_blocks Markdown extension module
 """
 
-from __future__ import absolute_import, unicode_literals, print_function
+
 
 from markdown.extensions import Extension
 from markdown.preprocessors import Preprocessor

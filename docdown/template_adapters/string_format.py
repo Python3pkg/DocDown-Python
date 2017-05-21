@@ -4,17 +4,17 @@
 Adapter to use Python str.format() to render a template
 """
 
-from __future__ import absolute_import, unicode_literals, print_function
+
 
 from string import Formatter
 
 # handle py2 and py3 strings without relying on six lib since we don't use it for anything else.
 try:
-    basestring
+    str
 except NameError:
     # if it's good enough for Kenneth Reitz, it's good enough for me
     # https://github.com/kennethreitz/requests/blob/5c4549493b35f5dbb084d029eaf12b6c7ce22579/requests/compat.py#L66
-    basestring = (str, bytes)
+    str = (str, bytes)
 
 
 class DefaultValueFormatter(Formatter):
@@ -29,7 +29,7 @@ class DefaultValueFormatter(Formatter):
         self.default = default
 
     def get_value(self, key, args, kwds):
-        if isinstance(key, basestring):
+        if isinstance(key, str):
             try:
                 return kwds[key]
             except KeyError:
